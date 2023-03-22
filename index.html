@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,24 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet" />
   </head>
+
   <body id="colorTheme">
-    <h1>colour generator</h1>
+    <h1>Color Generator</h1>
     <input type="color" id="color1" value="#00ff00" />
-    <input type="color" id="color2" value="#00fg00" />
-
-    <script>
-      let input1 = document.getElementById("color1");
-      let input2 = document.getElementById("color2");
-      let body = document.getElementById("colorTheme");
-
-      function colorGenerator() {
-        body.style.background = `linear-gradient(to right,${input1.value},${input2.value})`;
-      }
-
-      input1.addEventListener("input", colorGenerator);
-      input2.addEventListener("input", colorGenerator);
-
-    </script>
+    <input type="color" id="color2" value="#ff0000" />
+    <h3>Current css background</h3>
+    <p id="para"></p>
+    <script src="script.js"></script>
   </body>
-</html> -->
+</html>
